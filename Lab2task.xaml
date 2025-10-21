@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.Lab2task">
+
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto, Auto"
+          RowSpacing="5" 
+          Padding="20">
+
+        <Label Text="Andrew Jentai Anak Tony BCS23090009"
+               FontAttributes="Italic"
+               HorizontalOptions="Center"
+               Grid.Row="0"
+               FontSize="Header"
+               Margin="0, 0, 0, 10"/>
+
+        <Image Source="pug_image.jpg"
+               Aspect="AspectFill"
+               HeightRequest="300"
+               Grid.Row="1"
+               Margin="0, 0, 0, 10"/>
+
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto" Margin="0, 0, 0, 5">
+            <VerticalStackLayout Grid.Column="0">
+                <Label Text="Coco" FontSize="25" FontAttributes="Bold" />
+                <Label Text="Meme dog" TextColor="LightGray" FontSize="16" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Column="1" HorizontalOptions="End" Spacing="2">
+                <Label Text="♂" FontSize="20" FontAttributes="Bold" TextColor="Black"
+                       HorizontalTextAlignment="End"/>
+                <Label Text="1 year old" TextColor="Gray" FontSize="14"
+                       HorizontalTextAlignment="End"/>
+            </VerticalStackLayout>
+        </Grid>
+
+        <Label Text="Mystical 28 Lorong 8B, Legendary garden, (secret code)96000 Sibu, Sarawak"
+               TextColor="LightGray"
+               Grid.Row="3"
+               Margin="0, 0, 0, 10"/>
+
+        <Grid Grid.Row="4" ColumnDefinitions="Auto, *, Auto" Margin="0, 0, 0, 10">
+            <Image Source="profile_photo_andrew.jpg"
+                   Grid.Column="0"
+                   WidthRequest="40"
+                   HeightRequest="40"
+                   Aspect="AspectFill"
+                   VerticalOptions="Center">
+                <Image.Clip>
+                    <EllipseGeometry Center="20,20" RadiusX="20" RadiusY="20" />
+                </Image.Clip>
+            </Image>
+            <VerticalStackLayout Grid.Column="1" Margin="10, 0, 0, 0" VerticalOptions="Center">
+                <Label Text="Andrew THE SUPREMACY" FontAttributes="Bold" FontSize="16" />
+                <Label Text="Owner" TextColor="Gray" FontSize="14" />
+            </VerticalStackLayout>
+            <Label Text="1.11.2024"
+                   Grid.Column="2"
+                   TextColor="LightGray"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="End"/>
+        </Grid>
+
+        <Label Grid.Row="5"
+               Text="Coco the Meme Dog is the internet's favorite fluffy comedian! This dog's unique power is making hilariously expressive faces that perfectly capture human feelings, instantly boosting your mood. Seeing Coco makes you happy!"
+               TextColor="Black"
+               FontSize="15"
+               Margin="0, 0, 0, 20"/>
+
+        <Border BackgroundColor="#FFD700"  StrokeShape="RoundRectangle 25"
+                Padding="15, 10"
+                Grid.Row="6"
+                HorizontalOptions="Fill"
+                HeightRequest="50">
+            <FlexLayout JustifyContent="Center" AlignItems="Center">
+                <Label Text="Adoption"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       VerticalOptions="Center"/>
+            </FlexLayout>
+        </Border>
+
+    </Grid>
+    
+</ContentPage>
